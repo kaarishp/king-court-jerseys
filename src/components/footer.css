@@ -1,4 +1,11 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
 .footer {
+    margin-top: auto;
     background-color: #333; /* Dark background for the footer */
     color: white; /* Light text for contrast */
     text-align: center; /* Center-align the text */
