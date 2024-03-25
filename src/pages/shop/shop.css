@@ -1,65 +1,68 @@
-/* Add a subtle background color to the shop */
+/* Adjust background and padding for the shop */
 .shop {
-  background-color: #f4f4f4; /* Light grey background for contrast */
-  padding: 20px 0; /* Adds some padding around the shop content */
+  background-color: #e8e3e3;
+  padding: 20px; /* Increased overall padding for better spacing */
 }
 
-/* Style adjustments for the shop title */
+/* Enhance the shop title for better visibility */
 .shopTitle h1 {
-  color: #333; /* Darker font color for better readability */
-  font-size: 48px; /* Slightly larger font size */
+  color: #333;
+  font-size: 48px;
   font-weight: bold;
 }
 
-/* Updated styles for product layout */
+/* Responsive grid with three items per row */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
-  gap: 20px; /* Spacing between grid items */
-  padding: 20px; /* Padding around the grid */
+  grid-template-columns: repeat(3, 1fr); /* Ensure three items per row */
+  gap: 20px; /* Space between items */
+  padding: 20px; /* Padding around the items */
   justify-content: center;
   align-items: stretch;
 }
 
-/* Enhanced product item styling */
+/* Style adjustments for individual products */
 .product {
-  background-color: #ffffff; /* White background for each product */
+  background-color: #ffffff;
   border-radius: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-  margin: 20px; /* Adjusted margin for spacing */
-  overflow: hidden; /* Ensures content fits within the border radius */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px; /* Adjusted margin for clarity */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease; /* Smooth scaling on hover */
+  padding: 20px; /* Increased padding inside each product for more space */
+  transition: transform 0.3s ease;
 }
 
 .product img {
-  width: 100%; /* Makes the image fully responsive within its container */
-  height: auto; /* Maintains aspect ratio */
-  object-fit: cover; /* Ensures the image covers the area nicely */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .product:hover {
-  transform: scale(1.05); /* Slightly enlarges the product on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
 }
 
-/* Description and button styling adjustments for clarity */
+/* Description adjustments */
 .product .description p {
-  margin: 10px 0; /* Adds spacing around text for better readability */
+  margin: 10px 0;
 }
 
+/* Button styling for a more modern and clickable look */
 .addToCartBttn {
-  background-color: #007bff; /* Brighter button color for visibility */
-  color: white; /* White text for contrast */
-  border: none; /* Removes border for a cleaner look */
+  background-color: #007bff;
+  color: white;
+  border: none;
   cursor: pointer;
-  margin-top: auto; /* Pushes the button to the bottom */
-  padding: 10px 20px; /* More padding for a larger click area */
-  width: 90%; /* Ensures button width consistency */
-  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+  margin-top: auto;
+  padding: 10px 20px;
+  width: 90%; /* Button width consistency */
+  border-radius: 25px; /* More rounded corners for the button */
+  transition: background-color 0.3s ease;
 }
 
 .addToCartBttn:hover {
-  background-color: #0056b3; /* Darker shade on hover for feedback */
+  background-color: #0056b3; /* Darker on hover for visual feedback */
 }

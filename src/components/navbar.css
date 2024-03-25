@@ -1,14 +1,22 @@
-.navbar{
-    width: 100%;
+.navbar {
     height: 80px;
-    background-color: red;
+    background-color: rgb(69, 60, 60);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; /* Updated this line */
     align-items: center;
+    padding: 0 20px; /* Add padding for better spacing from the edges */
 }
 
+.navbar h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Removed the text-align: left; for the navbar h1 */
+
 .links {
-    margin-right: 50px;
+    margin-right: 50px; /* Adjust if necessary, or remove if using padding on navbar */
     display: flex;
     align-items: center;
 }

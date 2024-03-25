@@ -1,43 +1,69 @@
+/* Overall Cart Layout Improvements */
 .cart {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto; /* Center the cart in the middle of the page */
   }
   
+  /* Style Enhancements for Cart Items */
   .cartItem {
-    width: 700px;
-    height: 250px;
     display: flex;
-  
     align-items: center;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 25px;
-    margin: 30px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1); /* Softer shadow for a cleaner look */
+    border-radius: 10px; /* Less pronounced border-radius for a modern look */
+    margin: 20px 0; /* Adjusted spacing */
+    padding: 20px; /* Add padding inside cart items */
+    background-color: #fff; /* Background color for contrast */
   }
   
   .cartItem img {
-    width: 200px;
+    max-width: 150px; /* Adjust image size for consistency */
+    border-radius: 8px; /* Optional: add a slight border-radius to images */
+    margin-right: 20px; /* Add space between image and description */
   }
   
+  /* Description and Interaction Area */
   .cartItem .description {
-    width: 100%;
-    font-size: 30px;
+    flex-grow: 1; /* Allow the description to take up available space */
+    font-size: 20px; /* Adjust font size for readability */
+  }
+  
+  .countHandler {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space out the buttons and input field */
   }
   
   .countHandler input {
-    width: 40px;
-    text-align: center;
-    font-weight: bolder;
+    width: 60px; /* More space for quantity input */
+    padding: 5px; /* Padding for better touch target */
   }
   
-  .checkout button {
-    width: 150px;
-    height: 50px;
-    background-color: rgb(19, 19, 19);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    margin: 10px;
-    cursor: pointer;
+  /* Checkout Section Styling */
+  .checkout {
+    text-align: center; /* Center align checkout details */
+    padding: 20px;
+    border-top: 2px solid #ccc; /* Separator for clarity */
+    width: 100%;
   }
+  
+  /* Button Styling for Cart and Checkout */
+button, .checkout button {
+    padding: 10px 20px; /* More padding for a larger clickable area */
+    margin: 0 10px; /* Space out buttons */
+    font-size: 16px; /* Increase font size for readability */
+    color: white; /* White text for better contrast */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Increase border-radius for rounder buttons */
+    cursor: pointer; /* Change cursor to pointer on hover for better user indication */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for color and slight scale */
+  }
+  
+  button:hover, .checkout button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover for visual feedback */
+    transform: scale(1.05); /* Slightly increase size on hover for interactive feedback */
+  }
+  

@@ -1,0 +1,17 @@
+.footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* Light text for contrast */
+    text-align: center; /* Center-align the text */
+    padding: 20px 0; /* Some padding for spacing */
+  }
+  
+  .footer a {
+    color: #00A0E9; /* A bright color for links */
+    text-decoration: none; /* No underline */
+    margin: 0 5px; /* Margin for spacing between links */
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Underline on hover for visual feedback */
+  }
+  
