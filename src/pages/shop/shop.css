@@ -1,53 +1,65 @@
-.shopTitle {
-    margin-top: 100px;
-    text-align: center;
-    font-size: 40px;
-  }
-  .products {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-  }
-  
-  .product {
-    border-radius: 15px;
-    width: 300px;
-    height: 350px;
-    margin: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .product img {
-    width: 400px;
-  }
-  
-  .product .description {
-    text-align: center;
-  }
-  
-  .product:hover {
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
-  
-  .addToCartBttn {
-    background-color: transparent;
-    border: 2px solid rgb(19, 19, 19);
-    min-width: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 15px;
-  }
-  
-  .addToCartBttn:hover {
-    background-color: rgb(19, 19, 19);
-    color: white;
-    cursor: pointer;
-  }
+/* Add a subtle background color to the shop */
+.shop {
+  background-color: #f4f4f4; /* Light grey background for contrast */
+  padding: 20px 0; /* Adds some padding around the shop content */
+}
+
+/* Style adjustments for the shop title */
+.shopTitle h1 {
+  color: #333; /* Darker font color for better readability */
+  font-size: 48px; /* Slightly larger font size */
+  font-weight: bold;
+}
+
+/* Updated styles for product layout */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Spacing between grid items */
+  padding: 20px; /* Padding around the grid */
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Enhanced product item styling */
+.product {
+  background-color: #ffffff; /* White background for each product */
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  margin: 20px; /* Adjusted margin for spacing */
+  overflow: hidden; /* Ensures content fits within the border radius */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.product img {
+  width: 100%; /* Makes the image fully responsive within its container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area nicely */
+}
+
+.product:hover {
+  transform: scale(1.05); /* Slightly enlarges the product on hover */
+}
+
+/* Description and button styling adjustments for clarity */
+.product .description p {
+  margin: 10px 0; /* Adds spacing around text for better readability */
+}
+
+.addToCartBttn {
+  background-color: #007bff; /* Brighter button color for visibility */
+  color: white; /* White text for contrast */
+  border: none; /* Removes border for a cleaner look */
+  cursor: pointer;
+  margin-top: auto; /* Pushes the button to the bottom */
+  padding: 10px 20px; /* More padding for a larger click area */
+  width: 90%; /* Ensures button width consistency */
+  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.addToCartBttn:hover {
+  background-color: #0056b3; /* Darker shade on hover for feedback */
+}
