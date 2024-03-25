@@ -18,6 +18,10 @@ export const ShopContextProvider = () => {
         setCartItems((prev) => ({...prev, [itemId]: prev[itemId] + 1}));
     };
 
+    const removeFromCart = (itemId) => {
+        setCartItems((prev) => ({...prev, [itemId]: prev[itemId] - 1}));
+    };
+    
     return <ShopContext.Provider>{props.children}</ShopContext.Provider>;
   
 };
