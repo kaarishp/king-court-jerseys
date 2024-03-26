@@ -23,10 +23,10 @@ This project is built with the following technologies:
 To run this project locally on your machine, follow the steps below:
 
 **Clone the repository**
-git clone https://github.com/kaarishp/king-court-jerseys.git
-cd e-commerce
-npm install
-npm start
+- git clone https://github.com/kaarishp/king-court-jerseys.git
+- cd e-commerce
+- npm install
+- npm start
 
 ## Acknowledgments
 A huge thank you to everyone who takes the time to look at, use, or contribute to King's Court Jerseys. Your interest and support fuel continuous improvement and feature development. We're excited to share our passion for basketball and technology with you and look forward to your feedback and contributions.
