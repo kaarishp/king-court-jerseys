@@ -1,5 +1,7 @@
 # King's Court Jerseys E-commerce Website
 
+![King's Court Jerseys](images/kingshop.png "King's Court Jerseys Example")
+
 ## Introduction
 Welcome to the GitHub repository of King's Court Jerseys, an e-commerce platform dedicated to offering a wide range of basketball jerseys. Designed with basketball fans in mind, our website provides an easy and enjoyable shopping experience, enabling fans to find and purchase their favorite team's jerseys with ease.
 
